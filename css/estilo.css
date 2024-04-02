@@ -1,12 +1,7 @@
 body{
-    background-color: #363636 
+background-color: rgb(191, 191, 191);
 }
-body{
-    color: white;
-}
-h1, h2, table{
-    color: #FF8C00;
-}
-tr{
-    color: #4682B4;
+
+header{
+    background-color: rgb(77,139 ,195 );
 }
