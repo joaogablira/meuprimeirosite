@@ -4,6 +4,7 @@ background-color: rgb(191, 191, 191);
 
 header{
     background-color: rgb(77,139 ,195 );
+    padding: 3%;
 }
 
 .logo{
@@ -16,6 +17,9 @@ nav{
 
 main{
     background-color: rgb(146, 208, 80);
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 section{
@@ -24,4 +28,12 @@ section{
 
 footer{
     background-color: rgb(112, 48, 160);
+    padding: 3%;
+}
+
+.cabecalho{
+    padding: 3%;
+}
+.rodape{
+    padding: 3%;
 }
