@@ -5,3 +5,23 @@ background-color: rgb(191, 191, 191);
 header{
     background-color: rgb(77,139 ,195 );
 }
+
+.logo{
+    background-color: rgb(255,255 ,0 );
+}
+
+nav{
+    background-color: rgb( 184, 209, 231);
+}
+
+main{
+    background-color: rgb(146, 208, 80);
+}
+
+section{
+    background-color: rgb(241, 214, 226);
+}
+
+footer{
+    background-color: rgb(112, 48, 160);
+}
