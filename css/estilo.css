@@ -37,3 +37,13 @@ footer{
 .rodape{
     padding: 3%;
 }
+
+.titulos{
+    line-height: 3;
+}
+p{
+    line-height: 1.5;
+}
+ul li{
+    line-height: 1.5;
+}
