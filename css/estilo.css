@@ -3,16 +3,16 @@ background-color: rgb(191, 191, 191);
 }
 
 header{
-    background-color: rgb(77,139 ,195 );
+    background-color: rgb(110, 195, 77);
     padding: 3%;
 }
 
 .logo{
-    background-color: rgb(255,255 ,0 );
+    background-color: rgb(0, 183, 255);
 }
 
 nav{
-    background-color: rgb( 184, 209, 231);
+    background-color: rgb(81, 151, 212);
 }
 
 main{
@@ -23,11 +23,11 @@ main{
 }
 
 section{
-    background-color: rgb(241, 214, 226);
+    background-color: rgb(77, 73, 75);
 }
 
 footer{
-    background-color: rgb(112, 48, 160);
+    background-color: rgb(248, 248, 248);
     padding: 3%;
 }
 
@@ -39,11 +39,38 @@ footer{
 }
 
 .titulos{
-    line-height: 3;
-}
+        font-family: "Press Start 2P", system-ui;
+        font-weight: 400;
+        font-style: normal;
+        line-height: 3;
+        text-align: center;
+        font-weight: bold;
+    }
 p{
     line-height: 1.5;
+    font-size: 1.2em;
 }
 ul li{
     line-height: 1.5;
+    font-size: 1.2em;
+}h1 h2{
+    font-size: 2em;
+    line-height: 3;
+}
+table{
+    border-collapse: collapse;
+    width: 80%;
+    font-size: 1.2em;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 2%;
+}
+td,th{
+    border: 5px dashed #f00;
+    padding: 1.5%;
+}
+
+/* essa faz uma linha cor sim cor não */
+tr:nth-child(even) {
+    background-color: #dddddd;
 }
