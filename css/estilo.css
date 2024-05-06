@@ -1,6 +1,6 @@
 body{
-background-color: #dddddd;
-color: ;
+background-image: url(../img/minefundo.png);
+color: white;
 }
 
 header{
@@ -10,6 +10,9 @@ header{
 
 .logo{
     background-color: rgb(0, 183, 255);
+}
+.mines{
+    width: 30%;
 }
 
 nav{
@@ -24,7 +27,7 @@ main{
 }
 
 section{
-    background-color: rgb(50, 50, 50);
+    background-color: rgb(10, 10, 10)
 }
 
 footer{
@@ -36,6 +39,7 @@ footer{
     padding: 3%;
 }
 .rodape{
+    background-color: #9b704d;
     padding: 3%;
 }
 
@@ -46,7 +50,23 @@ footer{
         line-height: 3;
         text-align: center;
         font-weight: bold;
-    }
+}
+
+p, li, table{
+    font-family: "Noto Sans", system-ui;
+    font-weight: 450;
+    font-style: normal;
+}
+
+h2{
+    color: #00b0db;
+}
+h3{
+    color: #a199b1;
+}
+.imgcentro{
+    width: 50%;
+}
 p{
     line-height: 1.5;
     font-size: 1.2em;
@@ -64,14 +84,20 @@ table{
     font-size: 1.2em;
     margin-left: auto;
     margin-right: auto;
-    margin-bottom: 2%;
+    margin-bottom: 1%;
 }
 td,th{
-    border: 5px dashed #f00;
+    border: 2.5px solid rgb(0, 0, 0);
     padding: 1.5%;
 }
 
-/* essa faz uma linha cor sim cor não */
-tr:nth-child(even) {
-    background-color:rgb(81, 151, 212);
+.cinza{
+    background-color: #9b704d;
+}
+
+.branco{
+    background-color: #84888b;
+}
+.verde{
+    background-color: #579b48;
 }
