@@ -109,3 +109,14 @@ td img{
     display: block;
     margin: 0px auto;
 }
+.linha{
+    display: flex;
+    flex-flow: row wrap;
+    margin-left: auto;
+    margin-right: auto;
+}
+.imggaleria{
+    width: 90%;
+    margin-left: 1%;
+    margin-right: 1%;
+}
