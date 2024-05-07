@@ -38,9 +38,8 @@ footer{
 .cabecalho{
     padding: 3%;
 }
-.rodape{
-    background-color: #9b704d;
-    padding: 3%;
+footer{
+    background-image: url(../img/bloco.png);
 }
 
 .titulos{
@@ -62,10 +61,12 @@ h2{
     color: #00b0db;
 }
 h3{
-    color: #a199b1;
+    color: #84888b;
 }
 .imgcentro{
-    width: 50%;
+    width: 40%;
+    display: block;
+    margin: 0px auto;
 }
 p{
     line-height: 1.5;
@@ -85,10 +86,12 @@ table{
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 1%;
+    padding: auto;
 }
 td,th{
     border: 2.5px solid rgb(0, 0, 0);
-    padding: 1.5%;
+    padding: auto;
+    text-align: center;
 }
 
 .cinza{
@@ -100,4 +103,9 @@ td,th{
 }
 .verde{
     background-color: #579b48;
+}
+td img{
+    width: 25%;
+    display: block;
+    margin: 0px auto;
 }
