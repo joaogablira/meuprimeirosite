@@ -20,7 +20,7 @@ nav{
 }
 
 main{
-    background-color: rgb(110, 195, 77);
+    background-image: url(../img/blocomadeira.jpg);
     width: 80%;
     margin-left: auto;
     margin-right: auto;
@@ -40,6 +40,7 @@ footer{
 }
 footer{
     background-image: url(../img/bloco.png);
+    text-align: center;
 }
 
 .titulos{
@@ -62,6 +63,7 @@ h2{
 }
 h3{
     color: #84888b;
+    width: 70%;
 }
 .imgcentro{
     width: 40%;
@@ -80,11 +82,10 @@ ul li{
     line-height: 3;
 }
 table{
-    border-collapse: collapse;
+    border: collapse;
     width: 75%;
     font-size: 1.2em;
-    margin-left: auto;
-    margin-right: auto;
+    margin: auto;
     margin-bottom: 1%;
     padding: auto;
 }
@@ -103,6 +104,16 @@ td,th{
 }
 .verde{
     background-color: #579b48;
+}
+.laranja{
+    text-size-adjust: 70%;
+    font-family: "Press Start 2P", system-ui;
+    font-weight: 400;
+    font-style: normal;
+    line-height: 1;
+    text-align: center;
+    font-weight: bold;
+    color: #e48e1d;
 }
 td img{
     width: 15%;
@@ -124,3 +135,17 @@ td img{
     font-size: 1rem;
     text-align: center;
 }
+a:link {
+    color: #579b48;
+    text-decoration: none;
+  }
+  
+  a:visited {
+    color:#e48e1d;
+    text-decoration: none;
+  }
+  
+  a:hover {
+    color: #00b0db;
+    text-decoration: underline;
+  }
