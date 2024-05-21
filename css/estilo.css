@@ -4,35 +4,51 @@ color: white;
 }
 
 header{
-    background-color: rgb(110, 195, 77);
+    background-color: rgba(255, 255, 255, 0.13);
     padding: 3%;
+    display: flex;
 }
 
 .logo{
-    background-color: rgb(0, 183, 255);
+    background-color: #202020;
+    width: 50%;
 }
 .mines{
-    width: 30%;
+    width: 50%;
 }
 
 nav{
-    background-color: rgb(81, 151, 212);
+    background-color: #202020;
+}
+.menu{
+    background-color: rgba(255, 255, 255, 0.13);
+    margin-left: auto;
+    display:  inline-block;
+    width: 30%;
+    height: 10%;
+    margin-top: auto;
+}
+
+.navigation{
+    display: flex;
+}
+
+.home{
+    display: inline-block;
+    text-align: center;
+    padding: 2%;
+    font-size: 120%;
 }
 
 main{
-    background-image: url(../img/blocomadeira.jpg);
-    width: 80%;
+    background-color: #202020;
+    width: 90%;
     margin-left: auto;
     margin-right: auto;
 }
 
 section{
-    background-color: rgb(10, 10, 10)
-}
-
-footer{
-    background-color: rgb(195, 130, 77);
-    padding: 3%;
+    background-color: #202020;
 }
 
 .cabecalho{
@@ -45,12 +61,30 @@ footer{
 
 .titulos{
         font-family: "Press Start 2P", system-ui;
+        text-align: center;
         font-weight: 400;
         font-style: normal;
         line-height: 3;
-        text-align: center;
         font-weight: bold;
 }
+.titulos{
+    font-family: "Press Start 2P", system-ui;
+    text-align: center;
+    font-weight: 400;
+    font-style: normal;
+    line-height: 3;
+    font-weight: bold;
+}
+.tituloh3{
+    color: #84888b;
+    font-family: "Press Start 2P", system-ui;
+    text-align: center;
+    font-weight: 400;
+    font-style: normal;
+    line-height: 3;
+    font-weight: bold;
+}
+
 
 p, li, table{
     font-family: "Noto Sans", system-ui;
