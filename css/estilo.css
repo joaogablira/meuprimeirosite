@@ -59,6 +59,8 @@ footer{
     text-align: center;
 }
 
+
+
 .titulos{
         font-family: "Press Start 2P", system-ui;
         text-align: center;
@@ -104,6 +106,7 @@ h3{
     display: block;
     margin: 0px auto;
 }
+
 p{
     line-height: 1.5;
     font-size: 1.2em;
@@ -129,6 +132,8 @@ td,th{
     text-align: center;
 }
 
+
+
 .cinza{
     background-color: #9b704d;
 }
@@ -140,7 +145,7 @@ td,th{
     background-color: #579b48;
 }
 .laranja{
-    text-size-adjust: 70%;
+    text-size-adjust: 1rem;
     font-family: "Press Start 2P", system-ui;
     font-weight: 400;
     font-style: normal;
@@ -149,6 +154,8 @@ td,th{
     font-weight: bold;
     color: #e48e1d;
 }
+
+
 td img{
     width: 15%;
     display: block;
@@ -156,6 +163,11 @@ td img{
 }
 .imggaleria{
     width: 90%;
+}
+.imgcenter{
+    width: 99%;
+    display: block;
+    margin: 0px auto;
 }
 .linha{
     display: flex;
@@ -169,6 +181,8 @@ td img{
     font-size: 1rem;
     text-align: center;
 }
+
+
 a:link {
     color: #579b48;
     text-decoration: none;
@@ -183,3 +197,41 @@ a:link {
     color: #00b0db;
     text-decoration: underline;
   }
+
+.row{
+    display: flex;
+    flex-flow: row wrap;
+}
+  .cards{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.card{
+    width: calc(33.33% - 20px); 
+    margin-bottom: 20px;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.cardmarrom{
+    background-color: #8F6448;
+}
+.cardroxo{
+    background-color: #6345BD;
+}
+.cardazul{
+    background-color: #006CEF;
+}
+.caixa{
+    background-color: auto;
+    padding: 2px;
+    text-align: center;
+}
+.caixa2{
+    color: #202020;
+    border: 16px solid #8F6448;
+    padding: 24px 17px;
+    position: relative;
+    background-color: #ffffff;
+}
