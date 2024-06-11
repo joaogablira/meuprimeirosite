@@ -210,20 +210,23 @@ a:link {
 .card{
     width: calc(33.33% - 20px); 
     margin-bottom: 20px;
-    padding: 20px;
+    padding: 15px;
     box-sizing: border-box;
 }
 
 .cardmarrom{
     background-color: #8F6448;
+    border: #8F6448;
 }
 .cardroxo{
     background-color: #6345BD;
+    border: #6345BD;
 }
 .cardazul{
     background-color: #006CEF;
+    border: #006CEF;
 }
-.caixa{
+/*.caixa{
     background-color: auto;
     padding: 2px;
     text-align: center;
@@ -234,4 +237,4 @@ a:link {
     padding: 24px 17px;
     position: relative;
     background-color: #ffffff;
-}
+}*/
