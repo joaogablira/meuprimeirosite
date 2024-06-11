@@ -1,11 +1,10 @@
 body{
 background-image: url(../img/minefundo.png);
-color: white;
+color: #ffffff;
 }
 
 header{
     background-color: rgba(255, 255, 255, 0.13);
-    padding: 3%;
     display: flex;
 }
 
@@ -22,11 +21,11 @@ nav{
 }
 .menu{
     background-color: rgba(255, 255, 255, 0.13);
-    margin-left: auto;
     display:  inline-block;
     width: 30%;
     height: 10%;
     margin-top: auto;
+    text-align: justify;
 }
 
 .navigation{
@@ -60,7 +59,6 @@ footer{
 }
 
 
-
 .titulos{
         font-family: "Press Start 2P", system-ui;
         text-align: center;
@@ -69,42 +67,18 @@ footer{
         line-height: 3;
         font-weight: bold;
 }
-.titulos{
-    font-family: "Press Start 2P", system-ui;
-    text-align: center;
-    font-weight: 400;
-    font-style: normal;
-    line-height: 3;
-    font-weight: bold;
-}
-.tituloh3{
-    color: #84888b;
-    font-family: "Press Start 2P", system-ui;
-    text-align: center;
-    font-weight: 400;
-    font-style: normal;
-    line-height: 3;
-    font-weight: bold;
-}
-
-
 p, li, table{
     font-family: "Noto Sans", system-ui;
     font-weight: 450;
     font-style: normal;
 }
-
-h2{
-    color: #00b0db;
-}
-h3{
-    color: #84888b;
-    width: 70%;
-}
 .imgcentro{
     width: 40%;
     display: block;
     margin: 0px auto;
+}
+.esq{
+    
 }
 
 p{
@@ -133,7 +107,6 @@ td,th{
 }
 
 
-
 .cinza{
     background-color: #9b704d;
 }
@@ -145,16 +118,29 @@ td,th{
     background-color: #579b48;
 }
 .laranja{
-    text-size-adjust: 1rem;
-    font-family: "Press Start 2P", system-ui;
-    font-weight: 400;
-    font-style: normal;
-    line-height: 1;
-    text-align: center;
-    font-weight: bold;
     color: #e48e1d;
 }
+.azul{
+    color: #00b0db;
+}
+.azule{
+    color: #494697;
+}
+.cardmarrom{
+    background-color: #8F6448;
+    border: #8F6448;
+}
 
+.roxin{
+    color: #7833ae;}
+.cardroxo{
+    background-color: #6345BD;
+    border: #6345BD;
+}
+.cardazul{
+    background-color: #006CEF;
+    border: #006CEF;
+}
 
 td img{
     width: 15%;
@@ -214,18 +200,7 @@ a:link {
     box-sizing: border-box;
 }
 
-.cardmarrom{
-    background-color: #8F6448;
-    border: #8F6448;
-}
-.cardroxo{
-    background-color: #6345BD;
-    border: #6345BD;
-}
-.cardazul{
-    background-color: #006CEF;
-    border: #006CEF;
-}
+
 /*.caixa{
     background-color: auto;
     padding: 2px;
