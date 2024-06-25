@@ -58,7 +58,7 @@ section{
 
 .cabecalho{
     padding: 3%;
-    background-color: #202020;
+    background-color: rgba(32, 32, 32, 0.10);
 }
 footer{
     background-image: url(../img/bloco.png);
@@ -180,7 +180,7 @@ td img{
 .imgcenter{
     width: 99%;
     display: block;
-    margin: 0px auto;
+    margin: auto;
 }
 .row{
     display: flex;
@@ -257,13 +257,10 @@ a:link {
 
 .texto_bandeira{
     position: absolute;
-    top: 40%;
-    bottom: 600%;
+    left: 40%;
+    top: 35%;
+    bottom: 50%;
     width: 100%;
-    text-align: center;
-    font-size: 8vw;
-    color: aliceblue;
-    text-shadow: 2px 2px 5px rgb(0, 89, 255);;
 }
 
 .inicio2{
@@ -271,43 +268,32 @@ a:link {
 }
 
 .bandeira{
-    margin-left: auto ;
-    margin-right: auto;
-    width: 80%;
-    display: block;   
-    opacity: 0.3;
+    margin-left: 0 ;
+    margin-right: 0;
+    width: 99%;
+    display: block;
 }
 
 .topleft{
     position: absolute;
-    top: 20px;
-    left: 100px;
-    font-size: 2vw;
-    color: aliceblue;
-    
+    top: 30px;
+    left: 30px;
 }
 
-.topright {
+.topright{
     position: absolute;
-    top: 20px;
-    right: 100px;
-    font-size: 2vw;
-    color: aliceblue;
-
+    bottom: 420px;
+    right: 30px;
 }
 
   .bottomleft {
     position: absolute;
-    bottom: 20px;
-    left: 100px;
-    font-size: 2vw;
-    color: aliceblue;
+    bottom: 30px;
+    left: 30px;
 }
 
 .bottomright {
     position: absolute;
-    bottom: 20px;
-    right: 110px;
-    font-size: 2vw;
-    color: aliceblue;
+    bottom: 30px;
+    right: 30px;
 }
