@@ -1,10 +1,13 @@
 body{
-background-image: url(../img/minefundo.png);
-color: #ffffff;
+    background-image: url(../img/minefundo.png);
+    color: #ffffff;
+    background-size: auto; /* Redimensiona a imagem para cobrir todo o corpo */
+    background-position: center; /* Centraliza a imagem no corpo */
+    font-weight: bold;
 }
 
 header{
-    background-color: rgba(255, 255, 255, 0.13);
+    background-color: rgba(255, 255, 255, 0.15);
     display: flex;
 }
 
@@ -14,18 +17,19 @@ header{
 }
 .mines{
     width: 50%;
+    margin-left: 25%;
 }
 
 nav{
     background-color: #202020;
 }
 .menu{
-    background-color: rgba(255, 255, 255, 0.13);
+    background-color: #202020;
     display:  inline-block;
     width: 30%;
     height: 10%;
     margin-top: auto;
-    text-align: justify;
+    text-align: center;
 }
 
 .navigation{
@@ -47,7 +51,7 @@ main{
 }
 
 section{
-    background-color: #202020;
+    background-color: rgba(32, 32, 32, 0.349);
 }
 
 .cabecalho{
@@ -55,17 +59,20 @@ section{
 }
 footer{
     background-image: url(../img/bloco.png);
+    padding: 1%;
+}
+.rodape{
     text-align: center;
 }
 
 
 .titulos{
-        font-family: "Press Start 2P", system-ui;
-        text-align: center;
-        font-weight: 400;
-        font-style: normal;
-        line-height: 3;
-        font-weight: bold;
+    font-family: "Press Start 2P", system-ui;
+    text-align: center;
+    font-weight: 400;
+    font-style: normal;
+    line-height: 3;
+    font-weight: bold;
 }
 p, li, table{
     font-family: "Noto Sans", system-ui;
@@ -77,20 +84,23 @@ p, li, table{
     display: block;
     margin: 0px auto;
 }
-.esq{
-    
-}
 
 p{
-    line-height: 1.5;
-    font-size: 1.2em;
+    margin-top: 1%;
+    margin-bottom: 1%;
+    line-height: 3vh;
+    min-height: 0.5vh;
+    font-size: 1.25rem;
+    text-align: justify;
 }
 ul li{
     line-height: 1.5;
     font-size: 1.2em;
-}h1 h2{
+}
+h1 h2{
     font-size: 2em;
     line-height: 3;
+    min-height: 4rem;
 }
 table{
     border: collapse;
@@ -123,6 +133,9 @@ td,th{
 .azul{
     color: #00b0db;
 }
+.vermelho{
+    color: #FF4500;
+}
 .azule{
     color: #494697;
 }
@@ -141,31 +154,44 @@ td,th{
     background-color: #006CEF;
     border: #006CEF;
 }
+.esq{
+    margin:auto;
+}
 
 td img{
     width: 15%;
     display: block;
     margin: 0px auto;
 }
+.imgsite{
+    width: 90%;
+    margin-right: auto;
+}
 .imggaleria{
     width: 90%;
+}
+.float{
+    float: left;
+    width: 15%;
 }
 .imgcenter{
     width: 99%;
     display: block;
     margin: 0px auto;
 }
-.linha{
+.row{
     display: flex;
     flex-flow: row wrap;
 }
 
-.col-3{
+.col3{
     width: 25%;
 }
-.col-3 p{
-    font-size: 1rem;
-    text-align: center;
+.col3 p{
+    text-align: justify;
+}
+.col6{
+    width: 50%;
 }
 
 
@@ -183,6 +209,9 @@ a:link {
     color: #00b0db;
     text-decoration: underline;
   }
+.mnt{
+    text-align: left;
+}
 
 .row{
     display: flex;
@@ -196,20 +225,86 @@ a:link {
 .card{
     width: calc(33.33% - 20px); 
     margin-bottom: 20px;
-    padding: 15px;
+    margin-top: 35px;
+    padding: 25px;
     box-sizing: border-box;
+    margin: auto;
 }
 
+@media screen and (max-width: 800px) {
+    .card {
+        width: calc(50% - 20px); /* 2 cards por linha em telas médias */
+    }
+    .col6{
+        width: 100%;
+    }
+    .col3{
+        width: calc(50% - 20px); /* 2 elementos por linha em telas médias */
+    }
+}
 
-/*.caixa{
-    background-color: auto;
-    padding: 2px;
+@media screen and (max-width: 660px) {
+    .card {
+        width: calc(80% - 20px); /* 1 card por linha em telas pequenas */
+    }
+    .col3{
+    width: calc(80% - 20px); /* 1 elementos por linha em telas pequenas */
+    }
+}
+
+.texto_bandeira{
+    position: absolute;
+    top: 40%;
+    bottom: 600%;
+    width: 100%;
     text-align: center;
+    font-size: 8vw;
+    color: aliceblue;
+    text-shadow: 2px 2px 5px rgb(0, 89, 255);;
 }
-.caixa2{
-    color: #202020;
-    border: 16px solid #8F6448;
-    padding: 24px 17px;
+
+.inicio2{
     position: relative;
-    background-color: #ffffff;
-}*/
+}
+
+.bandeira{
+    margin-left: auto ;
+    margin-right: auto;
+    width: 80%;
+    display: block;   
+    opacity: 0.3;
+}
+
+.topleft{
+    position: absolute;
+    top: 20px;
+    left: 100px;
+    font-size: 2vw;
+    color: aliceblue;
+    
+}
+
+.topright {
+    position: absolute;
+    top: 20px;
+    right: 100px;
+    font-size: 2vw;
+    color: aliceblue;
+
+}
+
+  .bottomleft {
+    position: absolute;
+    bottom: 20px;
+    left: 100px;
+    font-size: 2vw;
+    color: aliceblue;
+}
+
+.bottomright {
+    position: absolute;
+    bottom: 20px;
+    right: 110px;
+    font-size: 2vw;
+    color: aliceblue;
+}
