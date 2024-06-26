@@ -1,12 +1,12 @@
+/* ESTRUTURA DO SITE */
 body{
-    background-image: url(../img/minefundo.png);
+    background-color: #0000;
     color: #ffffff;
-    background-size: auto; /* Redimensiona a imagem para cobrir todo o corpo */
-    background-position: center; /* Centraliza a imagem no corpo */
     font-weight: bold;
+    background-image: url(../img/minefundo.png);
     background-repeat: initial;
+    background-position: center;
 }
-
 header{
     background-color: rgba(255, 255, 255, 0.15);
     padding: 3%;
@@ -35,7 +35,7 @@ header{
     width: 100%;
 }
 .minelogo{
-    width: 25%;
+    width: 35%;
 }
 
 nav{
@@ -72,61 +72,44 @@ footer{
     text-align: center;
 }
 
-nav ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    display: flex;
-}
-nav ul li {
-    margin: 0 10px;
-}
-nav ul li a {
-    color: white;
-    text-decoration: none;
-    padding: 10px 15px;
-    display: block;
-}
-nav ul li a:hover {
-    background-color: #579b48;
-    border-radius: 5px;
-}
-.menu-icon {
-    display: none;
-    font-size: 30px;
-    color: #ffffff;
-    cursor: pointer;
-}
+/* FORMATAÇÃO */
 
-#menu-toggle {
-    display: none;
-}
-li a {
-    display: inline-block;
+.pagtitle{
+    font-family: "Press Start 2P", system-ui;
     text-align: center;
-    padding: 2%;
-    font-size: 120%;
-    color: #ffffff;
-    text-decoration: none; /* Remover sublinhado padrão */
+    font-style: normal;
+    font-size: 3rem;
+    line-height: 3;
+    font-weight: 3rem;
+    -webkit-text-stroke: 1px black;
 }
-
-li a:hover {
-    color: #9c9d97; 
-    text-decoration: none;
-}
-
-li a:visited {
-color: #474f52;
-text-decoration: none;
-}
-
 .titulos{
+    font-family: "Press Start 2P", system-ui;
+    text-align: center;
+    font-style: normal;
+    font-size: 1.5rem;
+    line-height: 3;
+    font-weight: bold;
+    -webkit-text-stroke: 0.01px black;
+}
+.titulog{
+    font-family: "Press Start 2P", system-ui;
+    text-align: center;
+    font-style: normal;
+    font-size: 0.9rem;
+    line-height: 3;
+    font-weight: bold;
+}
+.end{
     font-family: "Press Start 2P", system-ui;
     text-align: center;
     font-style: normal;
     line-height: 3;
     font-weight: bold;
+    color: #2ccaaf;
+    -webkit-text-stroke: 0.1px #0b4c41;
 }
+
 p, li, table{
     font-family: "Noto Sans", system-ui;
     font-weight: 450;
@@ -169,16 +152,147 @@ td,th{
     text-align: center;
 }
 
+.mnt{
+    text-align: left;
+}
 
-.cinza{
+.esq{
+    margin:auto;
+}
+
+td img{
+    width: 15%;
+    display: block;
+    margin: 0px auto;
+}
+.imgsite{
+    width: 90%;
+    margin-right: auto;
+}
+.imggaleria{
+    width: 90%;
+}
+.float{
+    float: left;
+    width: 15%;
+}
+.imgcenter{
+    width: 99%;
+    display: block;
+    margin: auto;
+}
+
+.texto_bandeira{
+    position: absolute;
+    left: 40%;
+    top: 35%;
+    bottom: 50%;
+    width: 100%;
+}
+
+.siteofc{
+    position: relative;
+}
+
+.backsofc{
+    margin-left: 0 ;
+    margin-right: 0;
+    width: 99%;
+    display: block;
+}
+
+.topleft{
+    position: absolute;
+    top: 30px;
+    left: 30px;
+}
+
+.topright{
+    position: absolute;
+    bottom: 420px;
+    right: 30px;
+}
+
+  .bottomleft {
+    position: absolute;
+    bottom: 30px;
+    left: 30px;
+}
+
+.bottomright {
+    position: absolute;
+    bottom: 30px;
+    right: 1px;
+}
+
+.mineofc{
+    width: 20%;
+}
+.mojang{
+    width: 99%;
+}
+.microsoft{
+    width: 99%;
+}
+.xbox{
+ width: 99%;
+}
+.nintendo{
+    width: 50%;
+}
+
+/*LINKS*/
+
+a:link {
+    color: rgb(203,89,255);
+    text-decoration: none;
+  }
+  
+  a:visited {
+    color: #6345BD;
+    text-decoration: none;
+  }
+  
+  a:hover {
+    color: rgb(170,27,171);
+    text-decoration: underline;
+  }
+
+  /*MENU LINKS*/
+
+  li a {
+    display: inline-block;
+    text-align: center;
+    padding: 2%;
+    font-size: 120%;
+    color: white;
+    text-decoration: none; /* Remover sublinhado padrão */
+}
+
+li a:hover {
+    color: magenta; 
+    text-decoration: underline;
+}
+
+li a:visited {
+    color: white;
+    text-decoration: none;
+}
+
+/* ALGUMAS CORES*/
+
+.marrom{
     background-color: #9b704d;
 }
 
-.branco{
+.cinza{
     background-color: #84888b;
 }
 .verde{
     background-color: #579b48;
+}
+.amarelo{
+    color: #ffcb00;
 }
 .laranja{
     color: #e48e1d;
@@ -207,64 +321,11 @@ td,th{
     background-color: #006CEF;
     border: #006CEF;
 }
-.esq{
-    margin:auto;
+.cinzae{
+    color: darkgrey;
 }
 
-td img{
-    width: 15%;
-    display: block;
-    margin: 0px auto;
-}
-.imgsite{
-    width: 90%;
-    margin-right: auto;
-}
-.imggaleria{
-    width: 90%;
-}
-.float{
-    float: left;
-    width: 15%;
-}
-.imgcenter{
-    width: 99%;
-    display: block;
-    margin: auto;
-}
-.row{
-    display: flex;
-    flex-flow: row wrap;
-}
-
-.col3{
-    width: 25%;
-}
-.col3 p{
-    text-align: justify;
-}
-.col6{
-    width: 50%;
-}
-
-
-a:link {
-    color: rgb(203,89,255);
-    text-decoration: none;
-  }
-  
-  a:visited {
-    color: #6345BD;
-    text-decoration: none;
-  }
-  
-  a:hover {
-    color: rgb(170,27,171);
-    text-decoration: underline;
-  }
-.mnt{
-    text-align: left;
-}
+/* MEDIA QUERIE E ENVOLVIDOS*/
 
 .row{
     display: flex;
@@ -279,10 +340,51 @@ a:link {
     width: calc(33.33% - 20px); 
     margin-bottom: 20px;
     margin-top: 35px;
-    padding: 25px;
+    padding: 10px;
     box-sizing: border-box;
     margin: auto;
 }
+
+.col3{
+    width: 25%;
+}
+.col3 p{
+    text-align: justify;
+}
+.col6{
+    width: 50%;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+nav ul li {
+    margin: 0 10px;
+}
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 15px;
+    display: block;
+}
+nav ul li a:hover {
+    background-color: #579b48;
+    border-radius: 5px;
+}
+.menu-icon {
+    display: none;
+    font-size: 30px;
+    color: #ffffff;
+    cursor: pointer;
+}
+
+#menu-toggle {
+    display: none;
+}
+
 
 @media screen and (max-width: 950px) {
     .card {
@@ -338,47 +440,4 @@ a:link {
     .col3{
     width: calc(80% - 20px); /* 1 elementos por linha em telas pequenas */
     }
-}
-
-.texto_bandeira{
-    position: absolute;
-    left: 40%;
-    top: 35%;
-    bottom: 50%;
-    width: 100%;
-}
-
-.inicio2{
-    position: relative;
-}
-
-.bandeira{
-    margin-left: 0 ;
-    margin-right: 0;
-    width: 99%;
-    display: block;
-}
-
-.topleft{
-    position: absolute;
-    top: 30px;
-    left: 30px;
-}
-
-.topright{
-    position: absolute;
-    bottom: 420px;
-    right: 30px;
-}
-
-  .bottomleft {
-    position: absolute;
-    bottom: 30px;
-    left: 30px;
-}
-
-.bottomright {
-    position: absolute;
-    bottom: 30px;
-    right: 30px;
 }
