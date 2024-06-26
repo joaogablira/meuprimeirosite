@@ -1,51 +1,52 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-    <head>
-        <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Home - Minecraft</title>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minecraft</title>
 
-        <link rel="stylesheet" href="css/reset.css">
-        <link rel="stylesheet" href="css/estilo.css">
-        <link rel="icon" type="img/x-icon" href="img/mineicone.png">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/estilo.css">
+    <link rel="icon" type="img/x-icon" href="img/mineicone.png">
 
-         <link rel="preconnect" href="https://fonts.googleapis.com">
-          <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-          <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
 
-          <link rel="preconnect" href="https://fonts.googleapis.com">
-          <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-          <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-    </head>
-      <body>
-        <header class="cabecalho">
-          <div class="logo">
-            <img class="mines" src="img/minelogo.png" alt="Minecraft Logo">
-           </div>
-           <nav>
-            <nav class="menu">
-              <ul class="navegation">
-                  <li class="home"><a href="index.html">Início - MC</a></li>
-                  <li class="home"><a href="minecraft.html">Minecraft</a></li>
-                  <li class="home"><a href="mcdungeons.html">Minecraft Dungeons</a></li>
-                  <li class="home"><a href="mclegends.html">Minecraft Legends</a></li>
-                  <li class="home"><a href="mceducation.html">Minecraft Education</a></li>
-                  <li class="home"><a href="siteoficial.html">Site Oficial</li>
-              </ul>
-            </nav>
-        </header>
-        <main>
-          <h1 class="titulos">MINECRAFT</h1>
-          <section>
-                <div>
-                    <img class="imgsite" src="img/minecraftb.jpg" alt="">
-                </div>
-                <div>
-                    <h1><span class="azul  mnt titulos" style='font-size:40px;'>&#128295;&#128187;   CONFIGURANDO</span>
-                    <h1><span class="vermelho  mnt titulos" style='font-size:40px;'>&#128204;     EM BREVE...</span>
-                </div>
-            </section>
-        </main>
-        <footer>.</footer>
-    </body>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  </head>
+  <body>    
+    <header class="cabecalho">
+        <div class="logo">
+            <img class="minelogo" src="img/minelogo.png" alt="">
+        </div>
+        <nav id="menu">
+            <input type="checkbox" id="menu-toggle">
+            <label for="menu-toggle" class="menu-icon">&#9776;</label>
+            <ul>
+                <li><a href="index.html" onclick="document.getElementById('menu-toggle').click()">Início</a></li>
+                <li><a href="minecraft.html" onclick="document.getElementById('menu-toggle').click()">Minecraft</a></li>
+                <li><a href="mcdungeons.html" onclick="document.getElementById('menu-toggle').click()">Minecraft Dungeons</a></li>
+                <li><a href="mclegends.html" onclick="document.getElementById('menu-toggle').click()">Minecraft Legends</a></li>
+                <li><a href="mceducation.html" onclick="document.getElementById('menu-toggle').click()">Minecraft Education</a></li>
+                <li><a href="siteoficial.html" onclick="document.getElementById('menu-toggle').click()">Site oficial</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+      <h1 class="titulos">MINECRAFT</h1>
+      <section>
+        <div>
+          <img class="imgsite" src="img/minecraftb.jpg" alt="">
+        </div>
+        <div>
+          <h1><span class="azul  mnt titulos" style='font-size:40px;'>&#128295;&#128187;   CONFIGURANDO</span>
+          <h1><span class="vermelho  mnt titulos" style='font-size:40px;'>&#128204;     EM BREVE...</span>
+        </div>
+      </section>
+    </main>
+    <footer>.</footer>
+  </body>
 </html>

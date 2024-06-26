@@ -17,25 +17,26 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
   </head>
-  <body>
+  <body>    
     <header class="cabecalho">
-      <div class="logo">
-        <img class="mines" src="img/minelogo.png" alt="Minecraft Logo">
-       </div>
-       <nav>
-        <nav class="menu">
-          <ul class="navegation">
-              <li class="home"><a href="index.html">Início - MC</a></li>
-              <li class="home"><a href="minecraft.html">Minecraft</a></li>
-              <li class="home"><a href="mcdungeons.html">Minecraft Dungeons</a></li>
-              <li class="home"><a href="mclegends.html">Minecraft Legends</a></li>
-              <li class="home"><a href="mceducation.html">Minecraft Education</a></li>
-              <li class="home"><a href="siteoficial.html">Site Oficial</li>
-          </ul>
+        <div class="logo">
+            <img class="minelogo" src="img/minelogo.png" alt="">
+        </div>
+        <nav id="menu">
+            <input type="checkbox" id="menu-toggle">
+            <label for="menu-toggle" class="menu-icon">&#9776;</label>
+            <ul>
+                <li><a href="index.html" onclick="document.getElementById('menu-toggle').click()">Início</a></li>
+                <li><a href="minecraft.html" onclick="document.getElementById('menu-toggle').click()">Minecraft</a></li>
+                <li><a href="mcdungeons.html" onclick="document.getElementById('menu-toggle').click()">Minecraft Dungeons</a></li>
+                <li><a href="mclegends.html" onclick="document.getElementById('menu-toggle').click()">Minecraft Legends</a></li>
+                <li><a href="mceducation.html" onclick="document.getElementById('menu-toggle').click()">Minecraft Education</a></li>
+                <li><a href="siteoficial.html" onclick="document.getElementById('menu-toggle').click()">Site oficial</a></li>
+            </ul>
         </nav>
     </header>
     <main>
-      <h1 class="titulos =">MINECRAFT</h1>
+      <h1 class="titulos">MINECRAFT</h1>
       <section>
         <h2 class="azul titulos">O que é Minecraft?</h2>
         <p><img class="float esq" src="img/mineicone.png">Minecraft é um dos jogos de sandbox mais icônicos e influentes de todos os tempos, oferecendo aos jogadores liberdade para construir, explorar e interagir em um vasto mundo gerado proceduralmente. Desde seu lançamento em 2009, o jogo se tornou um fenômeno global, definindo um novo padrão na indústria de videogames e atraindo uma enorme comunidade de jogadores de todas as idades. Com sua jogabilidade inovadora e o estilo visual característico de blocos pixelizados, Minecraft continua a encantar e inspirar milhões ao redor do mundo como uma plataforma para criatividade e aventuras sem limites. <a href="https://chat.openai.com/" target="_blank">Open AI Chat GPT</a></p>
