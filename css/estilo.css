@@ -24,7 +24,7 @@ header{
     display: flex;
     align-items: center;
     justify-content: space-between;   
-    background-color:  rgb(123,195,92);
+    background-color: #313131;
     padding: 10px 20px;
     position: fixed;
     top: 0;
@@ -33,7 +33,7 @@ header{
     box-sizing: border-box;
 }
 .logo{
-    background-color: rgb(123,195,92);
+    background-color: #313131;
     width: 200%;
 }
 .mines{
@@ -44,7 +44,7 @@ header{
 }
 
 nav{
-    background-color: rgb(123,195,92);
+    background-color: #313131;
 }
 .menu{
     margin-top: auto;
@@ -111,8 +111,8 @@ footer{
     font-style: normal;
     line-height: 3;
     font-weight: bold;
-    color: #2ccaaf;
-    -webkit-text-stroke: 0.1px #0b4c41;
+    color: #FF4500;
+    -webkit-text-stroke: 0.001px #FF4500;
 }
 
 p, li, table{
@@ -280,7 +280,7 @@ li a:hover {
 }
 
 li a:visited {
-    color: #A69A94;
+    color: #ffd83d;
     text-decoration: none;
 }
 
@@ -376,7 +376,7 @@ nav ul li a {
     display: block;
 }
 nav ul li a:hover {
-    background-color: #579b48;
+    background-color:#424242;
     border-radius: 5px;
 }
 .menu-icon {
@@ -410,7 +410,7 @@ nav ul li a:hover {
         display: none;
         flex-direction: column;
         width: 100%;
-        background-color: rgb(143, 100, 72);
+        background-color: rgb(42, 42, 42,0.8);
         position: absolute;
         top: 85px;
         left: 0;
