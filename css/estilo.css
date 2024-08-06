@@ -14,7 +14,7 @@ body{
 }
 header{
     background-color: rgba(255, 255, 255, 0.15);
-    padding: 3%;
+    padding: 100px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -34,13 +34,13 @@ header{
 }
 .logo{
     background-color: #313131;
-    width: 200%;
+    width: 100px;
 }
 .mines{
-    width: 100%;
+    width: 100px;
 }
 .minelogo{
-    width: 35%;
+    width: 200px;
 }
 
 nav{
@@ -245,8 +245,46 @@ td img{
 .nintendo{
     width: 50%;
 }
+input[type=submit] {
+    background-color: #04AA6D;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    float: right;
+  }
+  
+  input[type=submit]:hover {
+    background-color: #45a049;
+  }
+  
+  .container {
+    border-radius: 5px;
+    background-color: #006CEF;
+    padding: 20px;
+  }
+  
+  .col-25 {
+    float: left;
+    width: 25%;
+    margin-top: 6px;
+  }
+  
+  .col-75 {
+    float: left;
+    width: 75%;
+    margin-top: 6px;
+  }
+  
+  /* Clear floats after the columns */
+  .row::after {
+    content: "";
+    display: table;
+    clear: both;
+  }
 
-/*LINKS*/
+  /*LINKS*/
 
 a:link {
     color: rgb(203,89,255);
@@ -444,5 +482,9 @@ nav ul li a:hover {
     }
     .col3{
     width: calc(80% - 20px); /* 1 elementos por linha em telas pequenas */
+    }
+    .col-25, .col-75, input[type=submit] {
+        width: 100%;
+        margin-top: 0;
     }
 }
