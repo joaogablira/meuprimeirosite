@@ -105,6 +105,14 @@ footer{
     line-height: 3;
     font-weight: bold;
 }
+.tituloc{
+    font-family: "Press Start 2P", system-ui;
+    -webkit-text-stroke: 0.001px rgb(0, 65, 25);
+    text-align: center;
+    font-style: normal;
+    font-size: 2rem;
+    font-weight: bold;
+}
 .end{
     font-family: "Press Start 2P", system-ui;
     text-align: center;
@@ -322,6 +330,34 @@ li a:visited {
     text-decoration: none;
 }
 
+/* CONTATO */
+input[type=text], select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    background-color: #b6b6b6;
+    border: 3px solid #424242;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+input[type=submit] {
+    width: 100%;
+    background-color: #59cf3e;
+    color: #ffffff;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  input[type=submit]:hover {
+    background-color: #74cc00;
+  }
+  div .contato{
+    border-radius: 5px;
+    padding: 20px;
+  }
 /* ALGUMAS CORES*/
 
 .marrom{
@@ -354,6 +390,9 @@ li a:visited {
     border: #8F6448;
 }
 
+.verdec{
+    color: #59cf3e;
+}
 .roxin{
     color: #7833ae;}
 .cardroxo{

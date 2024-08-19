@@ -27,73 +27,76 @@
             <label for="menu-toggle" class="menu-icon">&#9776;</label>
             <ul>
                 <li><a href="index.html" onclick="document.getElementById('menu-toggle').click()">Início</a></li>
-                <li><a href="siteoficial.html" onclick="document.getElementById('menu-toggle').click()">Site oficial</a></li>
-                <li><a href="contato.html" onclick="document.getElementById('menu-toggle').click()">Contato</a></li>
+                <li><a href="#contato.html" onclick="document.getElementById('menu-toggle').click()">Contato</a></li>
             </ul>
         </nav>
     </header>
     <main>
-      <section>
-        <style>
-
-          input[type=text], select {
-            width: 100%;
-            padding: 12px 20px;
-            background-color: #84888b;
-            margin: 8px 0;
-            display: inline-block;
-            border: 1px solid #84888b;
-            border-radius: 4px;
-            box-sizing: border-box ;
-          }
-          
-          input[type=submit] {
-            width: 100%;
-            background-color: #4CAF50;
-            color: white;
-            padding: 14px 20px;
-            margin: 8px 0;
-            border: none;
-            border-radius: 4px;
-            cursor: pointer;
-          }
-          
-          input[type=submit]:hover {
-            background-color: #45a049;
-          }
-          
-          div {
-            border-radius: 5px;
-            background-color: #8F6448;
-            padding: 60px;
-          }
-          </style>
-          <body>
-          
-          <h3>Using CSS to style an HTML Form</h3>
-          
-          <div>
-            <form action="/action_page.php">
-              <label for="fname">First Name</label>
-              <input type="text" id="fname" name="firstname" placeholder="Your name..">
-          
-              <label for="lname">Last Name</label>
-              <input type="text" id="lname" name="lastname" placeholder="Your last name..">
-          
-              <label for="country">Country</label>
-              <select id="country" name="country">
-                <option value="australia">Australia</option>
-                <option value="canada">Canada</option>
-                <option value="usa">USA</option>
-              </select>
-
-              <input type="submit" value="Submit">
-            </form>
-          </div>
+      <section class="marrom" id="contato">
+      <h2 class="tituloc verdec">Encontrou algum erro? Fale Conosco</h2>
+        <form action="siteoficial.html">
+          <label for="name"><p>Nome:</p></label>
+          <input type="text" id="fname" name="fname" value="" placeholder="Nome">
+          <label for="sname"><p>Sobrenome: </p></label>
+          <input type="text" id="sname" name="sname" value="" placeholder="Sobrenome"><br></br>
+          <label for="email"><p>Email: </p></label>
+          <input type="text" id="email" name="email" value="" placeholder="email@email.com"><br></br>
+          <label for="tel"><p>Telefone: </p></label>
+          <input type="text" id="tel" name="tel" value="" placeholder="(99) 99999-9999"><br></br>
+          <label for="estado"><p>Estado: </p></label>
+          <select id="estado" name="estado">
+            <option value="estado">AC</option>
+            <option value="estado">AL</option>
+            <option value="estado">AP</option>
+            <option value="estado">AM</option>
+            <option value="estado">BA</option>
+            <option value="estado">CE</option>
+            <option value="estado">DF</option>
+            <option value="estado">ES</option>
+            <option value="estado">GO</option>
+            <option value="estado">MA</option>
+            <option value="estado">MT</option>
+            <option value="estado">MS</option>
+            <option value="estado">MG</option>
+            <option value="estado">PA</option>
+            <option value="estado">PB</option>
+            <option value="estado">PR</option>
+            <option value="estado">PE</option>
+            <option value="estado">PI</option>
+            <option value="estado">RJ</option>
+            <option value="estado">RN</option>
+            <option value="estado">RS</option>
+            <option value="estado">RO</option>
+            <option value="estado">RR</option>
+            <option value="estado">SC</option>
+            <option value="estado">SP</option>
+            <option value="estado">SE</option>
+            <option value="estado">TO</option>
+          </select>
+          <label for="fname">Relate seu Erro :</label><br>
+          <input type="text" id="fname" name="fname" value="" placeholder=""><br><br>
+        <p><input type="submit" value="ENVIAR"></p>
+        
       </section>
     </main>
     <footer class="rodape">
       <p class="end">Criado por &copy; João Gabriel Tavares de Lira <em id="date">2024</em></p>
     </footer>
+    <script>
+      document.addEventListener('DOMContentLoaded', function() {
+      const headerHeight = document.getElementById('cabecalho').offsetHeight;
+      document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+          anchor.addEventListener('click', function(e) {
+              e.preventDefault();
+              const targetId = this.getAttribute('href').substring(1);
+              const targetElement = document.getElementById(targetId);
+              window.scrollTo({
+                  top: targetElement.offsetTop - headerHeight,
+                  behavior: 'smooth'
+              });
+          });
+      });
+    });
+    </script>
   </body>
 </html>
