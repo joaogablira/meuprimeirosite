@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minecraft</title>
+
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/estilo.css">
+    <link rel="icon" type="img/x-icon" href="img/mineicone.png">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  </head>
+  <body>    
+    <header class="cabecalho">
+      <div class="logo">
+          <a href="index.html"><img class="minelogo" src="img/minelogo.png" alt=""></a>
+      </div>
+      <nav id="menu">
+          <input type="checkbox" id="menu-toggle">
+          <label for="menu-toggle" class="menu-icon">&#9776;</label>
+          <ul>
+            <ul>
+              <li><a href="contato.html" onclick="document.getElementById('menu-toggle').click()">Contato</a></li>
+
+            </ul>
+          </ul>
+      </nav>
+  </header>
+  <main>
+    <h1 class="pagtitle" id="minecraft">Itens</h1>
+    <section>
+      <span class="vermelho  mnt titulos" style='font-size:15px;'>&#128226; Info: Aqui será um pequeno "guia" sobre a fundição do minecraft</span>
+    </section>
+  </main>
+  <footer class="rodape">
+    <p class="end">Criado por &copy; João Gabriel Tavares de Lira <em id="date">2024</em></p>
+  </footer>
+      <script>
+        // Aguarda até que todo o conteúdo do DOM tenha sido completamente carregado e processado
+        document.addEventListener('DOMContentLoaded', function() {
+        // Obtém a altura do cabeçalho (menu) e armazena em uma constante
+        const headerHeight = document.getElementById('cabecalho').offsetHeight;
+
+        // Seleciona todos os elementos 'a' que têm um atributo href começando com '#'
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            // Adiciona um evento de clique a cada link de âncora
+            anchor.addEventListener('click', function(e) {
+                // Previna o comportamento padrão do clique no link
+                e.preventDefault();
+
+                // Obtém o id do alvo a partir do atributo href do link, removendo o primeiro caractere ('#')
+                const targetId = this.getAttribute('href').substring(1);
+
+                // Encontra o elemento alvo usando o id extraído
+                const targetElement = document.getElementById(targetId);
+
+                // Desloca a janela para a posição do elemento alvo menos a altura do cabeçalho, suavemente
+                window.scrollTo({
+                    top: targetElement.offsetTop - headerHeight,
+                    behavior: 'smooth'
+                });
+            });
+        });
+    });
+  </script>
+</body>
+</html>
