@@ -113,6 +113,13 @@ footer{
     font-size: 2rem;
     font-weight: bold;
 }
+.titulop{
+    font-family: "Press Start 2P", system-ui;
+    -webkit-text-stroke: 0.001px rgb(0, 65, 25);
+    text-align: left;
+    font-style: normal;
+    font-weight: bold;
+}
 .end{
     font-family: "Press Start 2P", system-ui;
     text-align: center;
@@ -140,6 +147,9 @@ p{
     line-height: 3vh;
     min-height: 0.5vh;
     font-size: 1.25rem;
+    text-align: center;
+}
+.jus{
     text-align: justify;
 }
 ul li{
@@ -172,7 +182,14 @@ td,th{
 .esq{
     margin:auto;
 }
-
+.esqp{
+    margin:auto;
+    width: 5%;
+    float: left;
+}
+.md{
+    width: 99%;
+}
 td img{
     width: 15%;
     display: block;
@@ -183,7 +200,10 @@ td img{
     margin-right: auto;
 }
 .imggaleria{
-    width: 90%;
+    width: 85%;
+}
+.imggaleriad{
+    width: 65%;
 }
 .float{
     float: left;
@@ -294,19 +314,20 @@ input[type=submit] {
 
   /*LINKS*/
 
+
 a:link {
-    color: rgb(203,89,255);
+    color: #2ccaaf;
     text-decoration: none;
   }
   
   a:visited {
-    color: #6345BD;
+    color: #f000ff;
     text-decoration: none;
   }
   
   a:hover {
-    color: rgb(170,27,171);
-    text-decoration: underline;
+    color: #8af1df;
+    text-decoration: wavy;
   }
 
   /*MENU LINKS*/
@@ -316,7 +337,7 @@ a:link {
     text-align: center;
     padding: 2%;
     font-size: 120%;
-    color: white;
+    color: #ffffff;
     text-decoration: none; /* Remover sublinhado padrão */
 }
 
@@ -370,6 +391,9 @@ input[type=submit] {
 .verde{
     background-color: #579b48;
 }
+.verdep{
+    background-color: #00AA00;
+}
 .amarelo{
     color: #ffcb00;
 }
@@ -389,9 +413,20 @@ input[type=submit] {
     background-color: #8F6448;
     border: #8F6448;
 }
-
+.vm{
+    color: #0db50d;
+}
+.crismon{
+    color: #3aec93;
+}
+.crismon1{
+    color: #f80000;
+}
 .verdec{
     color: #59cf3e;
+}
+.roxom{
+    color: #f000ff;
 }
 .roxin{
     color: #7833ae;}
@@ -432,6 +467,22 @@ input[type=submit] {
 }
 .col3 p{
     text-align: justify;
+}
+.linha, .row  {
+    display: flex;
+    flex-flow: row wrap;
+}
+.col-2{
+    width: 16,50%;
+    text-align: center;
+}
+.col-3{
+    width: 25%;
+    text-align: center;
+}
+.col-4{
+    width: 33%;
+    text-align: center;
 }
 .col6{
     width: 50%;
