@@ -523,10 +523,16 @@ nav ul li a:hover {
     .card {
         width: calc(50% - 20px); /* 2 cards por linha em telas médias */
     }
+    .col-6{
+        width: 100%;
+    }
     .col6{
         width: 100%;
     }
-    .col3{
+    .col-4{
+        width: calc(50% - 20px); /* 1 elementos por linha em telas pequenas */
+    }
+    .col-3{
         width: calc(50% - 20px); /* 2 elementos por linha em telas médias */
     }
     .menu-icon {
@@ -570,8 +576,11 @@ nav ul li a:hover {
     .card {
         width: calc(80% - 20px); /* 1 card por linha em telas pequenas */
     }
-    .col3{
+    .col-3{
     width: calc(80% - 20px); /* 1 elementos por linha em telas pequenas */
+    }
+    .col-4{
+        width: calc(80% - 20px); /* 1 elementos por linha em telas pequenas */
     }
     .col-25, .col-75, input[type=submit] {
         width: 100%;
